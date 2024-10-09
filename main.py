@@ -21,6 +21,7 @@ for k in [2, 5, 10, 50, 200, 500, 1000, 2000]:
         for col in range(width//3):
             centroid = centroids[labels[row, col]].reshape(3, 3, 3)  # Shape it back to 3x3x3
             newImage[row*3:(row+1)*3, col*3:(col+1)*3, :] = centroid
+    plt.imsave(f'compressed_image_{k}_clusters.png', newImage)
     plt.imshow(newImage)
     plt.title(f'Image compression with {k} clusters')
     plt.show()
