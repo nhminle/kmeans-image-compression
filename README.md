@@ -55,5 +55,7 @@ Since this repository doesn't include a virtual environment, users need to creat
 3. The script will display compressed versions of the image at different cluster sizes (e.g., 2, 5, 10, 50, 200, 500, 1000, 2000 clusters).
 
 ### Example
+original image:
 ![original image](cityview.png)
-![compressed image](cityview.png)
+compressed image:
+![compressed image](reconstructed_image_k_2000.png)
